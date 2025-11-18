@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net48</TargetFramework>
+		<LangVersion>12</LangVersion>
+		<RootNamespace>DynamicKeycards.Dynamic914</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="Assembly-CSharp" HintPath="..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\Assembly-CSharp.dll" Publicize="true" />
+		<Reference Include="Assembly-CSharp-firstpass" HintPath="..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\Assembly-CSharp-firstpass.dll" />
+		<Reference Include="CommandSystem.Core" HintPath="..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\CommandSystem.Core.dll" />
+		<Reference Include="Dynamic914.Dependency-LabAPI">
+		  <HintPath>..\..\AppData\Roaming\SCP Secret Laboratory\LabAPI\dependencies\global\Dynamic914.Dependency-LabAPI.dll</HintPath>
+		</Reference>
+		<Reference Include="DynamicKeycards-LabAPI">
+		  <HintPath>..\..\AppData\Roaming\SCP Secret Laboratory\LabAPI\plugins\global\DynamicKeycards-LabAPI.dll</HintPath>
+		</Reference>
+		<Reference Include="Mirror" HintPath="..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\Mirror.dll" />
+		<Reference Include="Pooling" HintPath="..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\Pooling.dll" />
+		<Reference Include="UnityEngine" HintPath="..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\UnityEngine.dll" />
+		<Reference Include="UnityEngine.CoreModule" HintPath="..\..\..\..\Program Files (x86)\Steam\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\UnityEngine.CoreModule.dll" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Northwood.LabAPI" Version="1.1.4" />
+		<PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.3" PrivateAssets="all" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+	</ItemGroup>
+
+</Project>
