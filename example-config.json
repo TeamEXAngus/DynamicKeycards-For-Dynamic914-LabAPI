@@ -1,0 +1,34 @@
+{
+	"recipes" : 
+	[
+		{
+			"type" : "item",
+			"value" : "Coin",
+			"rough" : [ {"type" : "item", "value" : "None", "rolls" : 1} ],
+			"coarse" : [ {"type" : "item", "value" : "Coin", "rolls" : 1} ],
+			"oneone" : [ {"type" : "item", "value" : "Coin", "rolls" : 1} ],
+			"fine" : [ {"type" : "dynamickeycard", "value" : "credit_card", "rolls" : 4} ],
+			"veryfine" :
+			[
+				{"type" : "item", "value" : "None", "rolls": 2},
+				{"type" : "dynamickeycard", "value" : "credit_card", "rolls": 1},
+				{"type" : "item", "value" : "KeycardJanitor", "rolls": 1},
+			]
+		},
+		{
+			"type" : "dynamickeycard" ,
+			"value" : "credit_card",
+			"rough" : [ {"type" : "item", "value" : "None", "rolls" : 1} ],
+			"coarse" : [ {"type" : "item", "value" : "Coin", "rolls" : 1} ],
+			"oneone" : [ {"type" : "items", "value" : ["Coin", "Coin", "Coin"], "rolls" : 1} ],
+			"fine" : [ {"type" : "item", "value" : "KeycardJanitor", "rolls" : 1} ],
+			"veryfine" : 
+			[
+				{"type" : "item", "value" : "None", "rolls" : 3},
+				{"type" : "item", "value" : "KeycardJanitor", "rolls" : 1},
+				{"type" : "item", "value" : "KeycardScientist", "rolls" : 1},
+				{"type" : "item", "value" : "KeycardZoneManager", "rolls" : 1},
+			]		
+		}
+  ]
+}
